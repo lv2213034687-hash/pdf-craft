@@ -19,6 +19,7 @@ const nextConfig = {
         module: false,
         url: false,
         worker_threads: false,
+        canvas: false,
       };
     }
 
@@ -26,6 +27,7 @@ const nextConfig = {
     config.resolve.alias = {
       ...config.resolve.alias,
       'module': false,
+      'canvas': false,
     };
 
     // Ignore the dynamic import of 'module' in gs-wasm
